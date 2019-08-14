@@ -4,9 +4,7 @@ import android.util.Log
 
 
 open class Human: Animal,Thinkable {
-    var hobby: String
-    constructor(name: String, age: Int) : super(name, age) {
-        this.hobby="ぽち"
+    constructor(name: String, age: Int,hobby: String) : super(name, age, hobby) {
     }
 
     override fun say() {
@@ -14,7 +12,7 @@ open class Human: Animal,Thinkable {
     }
 
     override fun think() {
-        Log.d("kotlintest","私は" + this.hobby + "について考える")
+        Log.d("kotlintest","私は" + hobby + "について考える")
     }
 
 }
